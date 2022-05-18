@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles/style2.css" lazyload/>
+
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script
+      src="https://cdn.jsdexlivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "contents";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+  </head>
+  <body>
+    <section id="menu">
+      <ul class="nav d-flex justify-content-center">
+        <div id="hai" class="d-flex justify-content-center">
+          <li class="nav-item d-inline lh-lg">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item d-inline lh-lg">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item d-inline lh-lg">
+            <a class="nav-link" href="#">Gameplay</a>
+          </li>
+          <li class="nav-item d-inline lh-lg">
+            <a class="nav-link" href="#">Earn</a>
+          </li>
+        </div>
+        <div id="mot" class="d-flex justify-content-center">
+          <li class="nav-item d-inline lh-lg">
+            <a class="nav-link disabled"
+              ><img id="logo" src="image/Group.png"
+            /></a>
+          </li>
+        </div>
+        <div id="ba" class="d-flex justify-content-center">
+          <li class="nav-item d-inline lh-lg">
+            <a class="nav-link" href="#">Tokenomics</a>
+          </li>
+          <li class="nav-item d-inline lh-lg">
+            <a class="nav-link" href="#">Core Team</a>
+          </li>
+          <li class="nav-item d-inline lh-lg">
+            <a class="nav-link" href="#">Roadmap</a>
+          </li>
+          <li class="nav-item d-inline lh-lg">
+            <a class="nav-link" href="#">FAQ</a>
+          </li>
+          <li class="nav-item d-inline lh-lg">
+            <a class="nav-link" href="#">Docs</a>
+          </li>
+        </div>
+      </ul>
+    </section>
+    <section class="home">
+      <div class="home-text">
+        <h2>The Future of</h2>
+        <h1 id="tieude">PLAY TO EARN</h1>
+        <p>
+          More than a regular Play to Earn game on the NFT space, we built the
+          game to focus more on the experience, while at the same time you can
+          still earn money.
+        </p>
+        <p>Contract: 0xc31c29d89e1c351d0a41b938dc8aa0b9f07b4a29</p>
+        <button class="btn-outline">Play Now</button>
+      </div>
+      <button class="btn tron">
+        <img src="image/Group 62.png" />
+      </button>
+    </section>
+
+    <section class="BG1">
+      <div class="BG1-text">
+        <h1 style="font-size: 50px">About Us</h1>
+        <br />
+        
+        <div class="pool p-4">
+          <h4>About Dragon Pool</h4>
+          
+          <p>
+            Dragon Pool is a game that completely combines the NFT IO-game
+            platform and the Binance Smart Chain (BSC), the achievements in the
+            game will be recorded on the Blockchain and basically determine the
+            NFT denomination. </br>Each player owns a collection of one or more
+            dragons using the NFT protocol. Players will use their Dragons to
+            engage in battles with thousands of other opponents, with the goal
+            of collecting and fighting.
+          </p>
+        </div>
+        <br />
+        <div class="pool p-4">
+          <h4>Dragon Pool's Story</h4>
+          <p style="text-transform: uppercase">
+            Since ancient times, Earth has been ruled by five dragon tribes:
+          </p>
+          <br />
+
+          <div class="row">
+            <div class="col oriental">
+              <img src="image/Oriental 1.png" />
+              <h5>Oriental</h5>
+            </div>
+            <div class="col oriental">
+              <img src="image/Oriental 2.png" />
+              <h5>Knuck</h5>
+            </div>
+            <div class="col oriental">
+              <img src="image/Oriental 3.png" />
+              <h5>Hydra</h5>
+            </div>
+            <div class="col oriental">
+              <img src="image/Oriental 4.png" />
+              <h5>Wyrm</h5>
+            </div>
+            <div class="col oriental">
+              <img src="image/Oriental 5.png" />
+              <h5>Drake</h5>
+            </div>
+          </div>
+
+          <br />
+          <p>
+            Dragon Valley - where the secret of the Sacred Dragon is hidden.
+            This magical land is the convergence of the spirit of heaven and
+            earth, the tribes will send the most elite warriors to join the
+            battle, in turn destroying and sucking the vitality of other dragons
+            to survive and become stronger. Legend has it that the dragon that
+            survives the last in the battle will become the Divine Dragon,
+            uniting the 5 tribes to rule and become invincible.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="BG2">
+      <div class="BG-text BG2-text">
+        <h1 style="font-size: 50px">GamePlay</h1>
+        <p style="top: 219px">
+          At Dragon Pool, all you have to do is eat, survive, fight.
+        </p>
+        <p style="top: 258px">
+          You will have to control your Dragon to fly in the PlayZone, eat
+          tokens to grow in size and level, dodge or destroy other opponents.
+        </p>
+      </div>
+      <div class="row">
+        <div id="rec1" style="top: 457px" class="rectangle-group col-4">
+          <span class="rectangle"></span><br />
+          <span class="rectangle"></span>
+        </div>
+        <div id="rec1" style="top: 712px" class="rectangle-group col-4">
+          <span class="rectangle"></span><br />
+          <span class="rectangle"></span>
+        </div>
+        <div id="rec1" style="top: 100px" class="rectangle-group col-4">
+          <span class="rectangle"></span><br />
+          <span class="rectangle"></span>
+        </div>
+      </div>
+    </section>
+    <section class="BG3">
+      <div class="BG-text BG3-text">
+        <h1>Evolution</h1>
+        <p>
+          Dragon's levels will be raised based on the amount of tokens
+          accumulated from participating in battles, winning and the number of
+          battles you participate in.
+        </p>
+      </div>
+      <div class="evol1">
+        <h5 class="evol" >LV10</h5>
+      </div>
+
+      <div class="evol2">
+        <h5 class="evol" >LV1</h5>
+      </div>
+
+      <div class="evol3">
+        <h5 class="evol">LV10</h5>
+      </div>
+
+      <div class="evol4"></div>
+
+      <div class="evol5">
+        <h5 class="evol">LV1</h5>
+      </div>
+
+      <div class="evol6">
+        <h5 class="evol">LV10</h5>
+      </div>
+
+      <div class="evol7">
+        <h5 class="evol">LV10</h5>
+      </div>
+
+      <div class="evol8">
+        <h5 class="evol">LV10</h5>
+      </div>
+
+      <div class="evol9">
+        <h5 class="evol">LV1</h5>
+      </div>
+    </div>
+    </section>
+    <section class="BG4">
+      <div class="BG-text BG4-text">
+        <h1>Earn Mechanism</h1>
+      </div>
+      <div style="left: 410px; top: 264px" class="pool-Earn">
+        <img src="image/Group 10252.png" alt="" />
+        <div>
+          <h5>Trading</h5>
+          <p>
+            You can invest dragon eggs to try your luck with rare dragons. Or
+            own and raise dragons to higher levels, sell dragons and items on
+            the Marketplace.
+          </p>
+        </div>
+      </div>
+      <div style="left: 975px; top: 264px" class="pool-Earn">
+        <img src="image/Group 10254.png" alt="" />
+        <div>
+          <h5>Playing</h5>
+          <p>
+            Join the battle, with your skills to collect or win other opponents
+            to own DP-NFT Token.
+          </p>
+        </div>
+      </div>
+
+      <div style="left: 410px; top: 503px" class="pool-Earn">
+        <img src="image/Group 10255.png" alt="" />
+        <div>
+          <h5>Reward</h5>
+          <p>
+            Participate in monthly events, perform daily tasks, fight for
+            position in the gold table, you will receive appropriate rewards.
+          </p>
+        </div>
+      </div>
+      <div style="left: 975px; top: 503px" class="pool-Earn">
+        <img src="image/Group 10253.png" alt="" />
+        <div>
+          <h5>Referral</h5>
+          <p>
+            Share this game to your friends, you will receive a commission
+            corresponding to 1% of the value they earn.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="BG5">
+      <div class="BG-text BG5-text">
+        <h1>Tokenomic</h1>
+      </div>
+      <div class="toke">
+        <div class="row">
+          <div class="col">
+            <h4>Token Information</h4>
+            <div class="pool-tokeInfo">
+              <span>
+                <p>Token Name: DRAGON POOL TOKEN</p>
+                <hr />
+                <p>Ticket: DP-NFT</p>
+                <hr />
+                <p>Total supply: 100.000.000.000 token</p>
+                <hr />
+                <p>Algorithm: Bep-20 (Binance Smart Chain)</p>
+                <hr />
+                <p>
+                  1 transfer fee 1.5% (1% transfer to burn wallet reduces
+                  supply, 0.5% is a reward divided equally among holders
+                  according to holding ratio)
+                </p>
+                <hr />
+                <p>Burning rate limit 95%</p>
+                <hr />
+              </span>
+            </div>
+          </div>
+          <div class="col">
+            <h4>Allocation</h4>
+            <div class="pool-tokeLoca">
+              <img src="image/Group 10491.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="BG6">
+      <div class="BG-text BG6-text">
+        <h1>Flow chart</h1>
+      </div>
+      <span class="chart"></span>
+    </section>
+    <section class="BG7">
+      <div class="BG-text BG7-text">
+        <h1>Core Team</h1>
+      </div>
+
+      <div class="team team1 d-flex flex-row">
+        <div class="row">
+          <div class="col">
+            <span class="core"><img src="image/HD 1.png" /></span>
+            <p>
+              <span style="color: #00f0ff">Mr. Hoan Do</span><br />
+              Co-Founder
+            </p>
+          </div>
+
+          <div class="col">
+            <span class="core"><img src="image/image 8.png" /></span>
+            <p>
+              <span style="color: #00f0ff">DR. Vu Viet Anh </span><br />
+              Advisor
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="team team2 d-flex flex-row">
+        <div class="row">
+          <div class="col">
+            <span class="core"><img src="image/image 8 (1).png" /></span>
+            <p>
+              <span style="color: #00f0ff">Roger Nguyen </span><br />
+              Blockchain Developer
+            </p>
+          </div>
+
+          <div class="col">
+            <span class="core"><img src="image/image 8 (2).png" /></span>
+            <p>
+              <span style="color: #00f0ff">Daniel Pham </span><br />
+              Fundraising and Marketing
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <span class="core"><img src="image/image 8 (3).png" /></span>
+            <p>
+              <span style="color: #00f0ff">Nolan Nguyen </span><br />
+              Front-end Developer
+            </p>
+          </div>
+
+          <div class="col">
+            <span class="core"><img src="image/image 8 (4).png" /></span>
+            <p>
+              <span style="color: #00f0ff">Chadly Nguyen </span><br />
+              Back-end Developer
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="BG8">
+      <div class="BG-text BG8-text">
+        <h1>Roadmap</h1>
+      </div>
+
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="phase">
+            <span class="top-phase"><h4>Phase 2: (3/2022)</h4></span>
+            <ul class="ff">
+              <li>
+                <span></span>
+                <p>Character creation and marketplace</p>
+              </li>
+              <li>
+                <span></span>
+                <p>Character creation and marketplacellll</p>
+              </li>
+              <li>
+                <span></span>
+                <p>Character creation and marketplace111111111</p>
+              </li>
+              <li>
+                <span></span>
+                <p>Character creation and marketplace</p>
+              </li>
+              <li>
+                <span></span>
+                <p>Character creation and marketplacellll</p>
+              </li>
+              <li>
+                <span></span>
+                <p>Character creation and marketplace111111111</p>
+              </li>
+              <li>
+                <span></span>
+                <p>Character creation and marketplace</p>
+              </li>
+              <li>
+                <span></span>
+                <p>Character creation and marketplacellll</p>
+              </li>
+              <li>
+                <span></span>
+                <p>Character creation and marketplace</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="phase">
+            <span class="top-phase"><h4>Phase 3: (6/2022)</h4></span>
+            <ul class="ff">
+              <li>
+                <span></span>
+                <p>Character creation and marketplace</p>
+              </li>
+              <li>
+                <span></span>
+                <p>Character creation and marketplacellll</p>
+              </li>
+              <li>
+                <span></span>
+                <p>Character creation and marketplace</p>
+              </li>
+              <li>
+                <span></span>
+                <p>Character creation and marketplace</p>
+              </li>
+              <li>
+                <span></span>
+                <p>Character creation and marketplacellll</p>
+              </li>
+              <li>
+                <span></span>
+                <p>Character creation and marketplace111111111</p>
+              </li>
+              <li>
+                <span></span>
+                <p>Character creation and marketplace</p>
+              </li>
+              <li>
+                <span></span>
+                <p>Character creation and marketplacellll</p>
+              </li>
+              <li>
+                <span></span>
+                <p>Character creation and marketplace111111111</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="phase">
+            <span class="top-phase"><h4>Phase 4: (9/2022)</h4></span>
+            <ul class="ff">
+              <li>
+                <span></span>
+                <p>Character creation and marketplace</p>
+              </li>
+              <li>
+                <span></span>
+                <p>Character creation and marketplacellll</p>
+              </li>
+              <li>
+                <span></span>
+                <p>Character creation and marketplace111111111</p>
+              </li>
+              <li>
+                <span></span>
+                <p>Character creation and marketplace</p>
+              </li>
+              <li>
+                <span></span>
+                <p>Character creation and marketplacellll</p>
+              </li>
+              <li>
+                <span></span>
+                <p>Character creation and marketplace111111111</p>
+              </li>
+              <li>
+                <span></span>
+                <p>Character creation and marketplace</p>
+              </li>
+              <li>
+                <span></span>
+                <p>Character creation and marketplacellll</p>
+              </li>
+              <li>
+                <span></span>
+                <p>Character creation and marketplace111111111</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mySlides fade">
+          <div class="phase">
+            <span class="top-phase"><h4>Phase 1: (12/2021)</h4></span>
+
+            <ul class="ff">
+              <li>
+                <span></span>
+                <p>Character creation and marketplace</p>
+              </li>
+              <li>
+                <span></span>
+                <p>Create website and social channels</p>
+              </li>
+              <li>
+                <span></span>
+                <p>Audit</p>
+              </li>
+              <li>
+                <span></span>
+                <p>Airdrop and bounty</p>
+              </li>
+              <li>
+                <span></span>
+                <p>Presale</p>
+              </li>
+              <li>
+                <span></span>
+                <p>Listing DEX Pancakeswap</p>
+              </li>
+              <li>
+                <span></span>
+                <p>Update information to coingecko</p>
+              </li>
+              <li>
+                <span></span>
+                <p>Listing on CEX top (airdrop phase 2 for all member on CEX exchange)</p>
+              </li>
+              <li>
+                <span></span>
+                <p>Launch beta game</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <div class="dot-G" style="text-align: center">
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(1)" ></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
+    <section class="BG9">
+      <div class="BG-text BG9-text">
+        <h1>FAQ</h1>
+        <h4>Need help with anything?</h4>
+      </div>
+      <div class="paq">
+        <hr />
+
+        <div class="paq-row">
+          <p>What is Dragon Pool Game ?</p>
+          <span>+</span>
+        </div>
+        <hr />
+        <div class="paq-row">
+          <p>Dragon Pool will have a mobile version ?</p>
+          <span>+</span>
+        </div>
+        <hr />
+        <div class="paq-row">
+          <p>Can I earn crypto by playing ?</p>
+          <span>+</span>
+        </div>
+        <hr />
+        <div class="paq-row">
+          <p>Is there an age restriction ?</p>
+          <span>+</span>
+        </div>
+        <hr />
+        <div class="paq-row">
+          <p>What am I risking ?</p>
+          <span>+</span>
+        </div>
+        <hr />
+        <div class="paq-row">
+          <p>What is DP-NFT ?</p>
+          <span>+</span>
+        </div>
+        <hr />
+        <div class="paq-row">
+          <p>How long will DP-NFT tokens burn ?</p>
+          <span>+</span>
+        </div>
+        <hr />
+        <div class="paq-row">
+          <p>Total supply of DP-NFT token ?</p>
+          <span>+</span>
+        </div>
+        <hr />
+        <div class="paq-row">
+          <p>Can I join the group/help ?</p>
+          <span>+</span>
+        </div>
+        <hr />
+        <div class="paq-row">
+          <p>When will Dragon Pool be released ?</p>
+          <span>+</span>
+        </div>
+        <hr />
+        <div class="paq-row">
+          <p>What do I need to prepare to play ?</p>
+          <span>-</span><br />
+          <p class="p-" style="font-size: 14px; clear: both">
+            You have a BSC wallet and have at least 100,000 tokens in the
+            wallet.
+          </p>
+        </div>
+        <hr />
+      </div>
+    </section>
+    <section class="BG10">
+      <span class="logo"><img src="image/Group.png" /></span>
+      
+      <div class="row iconWeb">
+        
+        <img class="col" src="image/icon 1.png" />
+        <img class="col" src="image/icon 2.png" />
+        <img class="col" src="image/icon 3 .png" />
+        <img class="col" src="image/icon 4.png" />
+        <img class="col" src="image/icon 5.png" />
+        <img class="col" src="image/icon 6.png" />
+        <img class="col" src="image/icon 7.png" />
+    
+    </div>
+      <div class="footer">
+        <p>Contract</p>
+        <p>How to play</p>
+        <p>Pitchdeck</p>
+        <p>Docs</p>
+      </div>
+    </section>
+  </body>
+</html>
